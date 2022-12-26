@@ -8,16 +8,15 @@ export default function App() {
 			<nav>
 				<ul>
 					<li>
-						<Link to="./routes/TestPage1.js" />
-						testPage1
+						<Link to="/TestPage1">TestPage1</Link>
 					</li>
 					<li>
-						<Link to="./routes/TestPage2.js" />
-						testPage2
+						<Link to="/TestPage2">testPage2</Link>
 					</li>
 				</ul>
 			</nav>
 			<Routes>
+				<Route path="/" element={<h1>heck</h1>}></Route>
 				<Route path="/TestPage1" element={<TestPage1 />}></Route>
 				<Route path="/TestPage2" element={<TestPage2 />}></Route>
 			</Routes>
